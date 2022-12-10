@@ -1,0 +1,15 @@
+<!-- sldsValidatorIgnore -->
+<template>
+
+    <lightning-card>
+        <lightning-datatable 
+            key-field="Id"
+            columns={columns}
+            data={data}
+            onrowselection={handleRowSelection}
+        ></lightning-datatable>
+        <lightning-button type="button" variant="brand" label="PREVIOUS" onclick={handlePrevClick}></lightning-button>
+        <lightning-button type="button" variant="brand" label="NEXT" onclick={handleNextClick}></lightning-button>
+    </lightning-card>
+    
+</template>
